@@ -1,108 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pdf Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pdf nmap Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 </head>
+
 <body>
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td align="left" valign="top" bgcolor="#ffe77b" style="background-color:#fff;">
-              <img height="100" width="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQ_m4DUpDZtd5CnGPtFUpGMXXEoPWNSVnAA&usqp=CAU" alt="">
-            </td>
-            <td align="left" bgcolor="#ffe77b" style="background-color: #fff;">
-              <h2 style="font-weight: 900;color: brown;">Online Store</h2>
-              <p>227 Cobblestone Road, 30000 Bedrock, Cobblestone County <br/> 
-                http://dinostore.bed | hello@dinostore.bed +555 7 789-1234</p>
-            </td>
-        </tr>
-    </table> 
-    <h1 style="font-size: 30px;font-weight: 600; color: green; margin-top: 10px;">INVOICE</h1>
-    <h4>#1</h4> 
-    <table width="95%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-          <td width="30%" align="left" valign="top" bgcolor="#ffe77b" style="background-color:#fff;">
-            <p>Invoice To:</p>
-            <h3 style="font-weight: 800;color: brown;">Jhone Carter</h3>
-          </td>
-          <td width="70%" align="left" bgcolor="#ffe77b" style="background-color: #fff;">             
-          </td>
-      </tr>
-      <tr>
-        <td width="30%" align="left" valign="top" bgcolor="#ffe77b" style="background-color:#fff;">
-          <p>Social Media Manager</p>
-          <p>Bolen Tex .Inc</p>
-        </td>
-        <td width="70%" align="left" bgcolor="#ffe77b" style="background-color: #fff;">             
-        </td>
-      </tr>
-  </table>  
-      <table width="95%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="30%" align="left" valign="top" bgcolor="#ffe77b" style="background-color:#fff;">
-            <p>+152 5248 523</p>
-            <p>info@gmail.com</p>
-          </td>
-          <td width="40%" align="left" bgcolor="#ffe77b" style="background-color: #fff;">             
-          </td>
-          <td width="30%" align="right" bgcolor="#ffe77b" style="background-color: #fff;">
-            <h4 style="font-weight: 700;color: #000000;">Date: 01 Dec 2020</h4> 
-            <h4 style="font-weight: 700;color: #000000;">INVOICE NO: DX-5236</h4>            
-          </td>
-        </tr>
-      </table>   
-      <table class="table" width="95%">
-          <thead>
-            <tr>
-              <th scope="col">Photo</th>
-              <th scope="col">Description</th>
-              <th scope="col">Unit</th>
-              <th scope="col">Quantity</th>
-              <th scope="col">Price</th>
-              <th scope="col">Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each products.prodlist}}
-            <tr>
-              <td width="10%">
-                <img height="70" width="70" src="{{this.imgurl}}" alt="">
-              </td>
-              <th scope="row" width="50%">
-                <h5 style="font-weight: 700;color:chocolate">{{this.name}}</h5>
-                <p>{{this.description}}</p>
-              </th>
-              <td width="10%">{{this.unit}}</td>
-              <td width="10%">{{this.quantity}}</td>
-              <td width="10%">${{this.price}}</td>
-              <td width="10%">${{this.total}}</td>
-            </tr>
-            {{/each}}
-          </tbody>
-        </table>
-        <table width="95%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="90%"  align="right" style="font-size: 25px;font-weight: 700;color:darkred; background-color: #f6f6f6;">Sub Total</td>
-            <td width="10%" align="right" style="background-color: lightgreen;"><h2 style="font-size: 25px;font-weight: 700;color:#fff;">${{products.subtotal}}</h2></td>
-          </tr>
-          <tr>
-            <td width="90%"  align="right" style="font-size: 25px;font-weight: 700;color:darkred; background-color: #f6f6f6;">Tax</td>
-            <td width="10%" align="right" style="background-color: lightcoral;"><h2 style="font-size: 25px;font-weight: 700;color:#fff;">${{products.tax}}</h2></td>
-          </tr>
-          <tr>
-            <td width="90%"  align="right" style="font-size: 25px;font-weight: 700;color:darkred; background-color: #f6f6f6;">Grand Total</td>
-            <td width="10%" align="right" style="background-color: lightgreen;"><h2 style="font-size: 25px;font-weight: 700;color:#fff;">${{products.gtotal}}</h2></td>
-          </tr>
-        </table>
-        <table width="95%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="100%"  align="left" style="font-size: 25px;font-weight: 700;color:red; background-color: #f6f6f6;">Notice:</td>
-          </tr>
-          <tr>
-            <td width="100%"  align="left" style="font-size: 25px;font-weight: 700;color:#000; background-color: #f6f6f6;">A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
-          </tr>
-        </table>
+  <section style="width: 100%; height: 320vh">
+    <div style="padding-left: 30vw; padding-top: 67vh">
+      <p style="color: rgb(16, 10, 68); font-size: 20px">date</p>
+      <p style="font-size: 50px; font-weight: bold; color: rgb(7, 3, 40)">
+        Vulnerability Scan
+      </p>
+      <p style="color: rgb(21, 211, 245); font-size: 45px">Report</p>
+      <p style="color: rgb(16, 10, 68); font-size: 20px">
+        prepared by <br />
+        <span style="color: rgb(7, 3, 40); font-weight: bold">
+          Dabbaghi walid</span>
+      </p>
+    </div>
+  </section>
+  <section style="width: 100%; height: 320vh">
+    <div style="margin-left: 40vw">
+      <div>
+        <p style="color: rgb(21, 211, 245); font-size: 45px; margin-left: 20px">
+          Overview
+        </p>
+        <hr style="
+              border-top: 3px solid #bbb;
+              width: 200px;
+              margin-left: 12px;
+              padding-bottom: 70px;
+            " />
+      </div>
+      <div>
+        <ol>
+          <li style="
+                color: rgb(7, 3, 40);
+                font-weight: bold;
+                font-size: 25px;
+                padding-bottom: 70px;
+              ">
+            Executive Summary
+          </li>
+          <li style="
+                color: rgb(7, 3, 40);
+                font-weight: bold;
+                font-size: 25px;
+                padding-bottom: 70px;
+              ">
+            Risks By Target
+          </li>
+          <li style="
+                color: rgb(7, 3, 40);
+                font-weight: bold;
+                font-size: 25px;
+                padding-bottom: 70px;
+              ">
+            Open TCP Ports
+          </li>
+          <li style="
+                color: rgb(7, 3, 40);
+                font-weight: bold;
+                font-size: 25px;
+                padding-bottom: 70px;
+              ">
+            Glossary
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section style="width: 100%; height: 320vh">
+    <div style="margin-left: 20px">
+      <div style="padding-top: 100px; padding-bottom: 45px">
+        <h3 style="color: rgb(7, 3, 40)">1 Executive Summary</h3>
+        <p style="margin-right: 230px">
+          Vulnerability scans were conducted on selected servers, networks,
+          websites, and applications. This report contains the discovered
+          potential risks from these scans. Risks have been classified into
+          categories according to the level of threat and degree of potential
+          harm they may pose.
+        </p>
+      </div>
+      <div>
+        <h2 style="color: rgb(7, 3, 40)">1.1 Total Risks</h2>
+        <p style="margin-right: 230px">
+          Below is the total number of risks found by severity. High risks are
+          the most severe and should be evaluated first. An accepted risk is
+          one which has been manually reviewed and classified as acceptable to
+          not fix at this time, such as afalse positive or an intentional part
+          of the system's architecture.
+        </p>
+        <div style="padding-top: 60px">
+          <p>
+            <span style="margin-right: 100px; color: black">High</span>
+            <span style="margin-right: 100px; color: black">Medium</span>
+            <span style="margin-right: 100px; color: black">Low</span>
+            <span style="margin-right: 100px; color: black">Accepted</span>
+          </p>
+          <p>
+            <span style="margin-right: 100px">data</span>
+            <span style="margin-right: 91px; margin-left: 11px">data</span>
+            <span style="margin-right: 69px; margin-left: 31px">data</span>
+            <span style="margin-left: 50px">data</span>
+          </p>
+        </div>
+        <div style="padding-top: 100px; padding-bottom: 45px">
+          <h2 style="color: rgb(7, 3, 40)">1.2 Report Coverage</h2>
+          <p style="margin-right: 230px">
+            This report includes findings for
+            <span style="color: rgb(4, 203, 247)">1 target</span> that were
+            scanned. Each target is a single URL, IP address, or fully
+            qualified domain name (FQDN).
+          </p>
+          <div style="margin-left: 50px">
+            <p style="font-size: 20px; color: rgb(7, 3, 40);">
+              Vulnerability Categories
+            </p>
+            <p style="color: rgb(4, 203, 247)">data</p>
+            <p style="color: rgb(4, 203, 247)">Open TCP Ports</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="width: 100%; height: 320vh;">
+    <div style="margin-left: 20px">
+      <div style="padding-top: 100px; padding-bottom: 45px">
+        <h3 style="color: rgb(7, 3, 40);">2 Risks By Target</h3>
+        <p style="margin-right: 230px">
+          This section contains the vulnerability findings for each target that was scanned. Prioritize the most
+          vulnerable assets
+          first.
+        </p>
+      </div>
+      <div>
+        <h2 style="color: rgb(7, 3, 40);">2.1 Targets Summary</h2>
+        <p>
+          The total number of risks found for each target, by severity.
+        </p>
+        <div style="    padding-top: 60PX;">
+
+          <p><span style="margin-right: 100PX; color: rgb(7, 3, 40);">Target</span>
+          <p style="color: rgb(7, 3, 40);"> site name </p>
+          <p><span style="margin-right: 100PX;color: rgb(218, 15, 204);">High</span>
+            <span style="margin-right: 100PX;color: rgb(255, 247, 0);">Medium</span>
+            <span style="margin-right: 100PX;color: rgb(79, 62, 230);">Low</span>
+            <span style="margin-right: 100PX;color: rgb(0, 255, 47);">Accepted</span>
+          </p>
+          <p><span style="margin-right: 100PX;">data</span>
+            <span style="    margin-right: 91PX;
+            margin-left: 11px;">data</span>
+            <span style="margin-right: 69PX;
+            margin-left: 31PX;">data</span>
+            <span style="margin-left: 50PX;">data</span>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="width: 100%; height: 320vh;">
+    <div style="margin-left: 20px">
+      <div style="padding-top: 100px; padding-bottom: 45px">
+        <h2 style="color: rgb(7, 3, 40);">2.2 Target Breakdowns</h2>
+        <p>
+          The risks discovered for each target.
+        </p>
+        <p><span style="margin-right: 100PX;  color: rgb(7, 3, 40);">Target</span>
+
+        <h2 style="color: rgb(4, 203, 247)">site name</h2>
+        <div style="    padding-top: 60PX;">
+          <p style="color: rgb(7, 3, 40);">Total Risks:</p>
+          <p><span style="margin-right: 100PX;color: rgb(218, 15, 204);">High</span>
+            <span style="margin-right: 100PX;color: rgb(255, 247, 0);">Medium</span>
+            <span style="margin-right: 100PX;color: rgb(79, 62, 230);">Low</span>
+            <span style="margin-right: 100PX;color: rgb(0, 255, 47);">Accepted</span>
+          </p>
+          <p><span style="margin-right: 100PX;">data</span>
+            <span style="    margin-right: 91PX;
+              margin-left: 11px;">data</span>
+            <span style="margin-right: 69PX;
+              margin-left: 31PX;">data</span>
+            <span style="margin-left: 50PX;">data</span>
+          </p>
+          <p style="color: rgb(7, 3, 40);">Open TCP Ports</p>
+          <p style="color: rgb(4, 203, 247)">Open TCP Port: <span style="color: rgb(4, 203, 247)"> 22 data</span> </p>
+          <p style="color: rgb(4, 203, 247)">Open TCP Port: <span style="color: rgb(4, 203, 247)"> 443 data</span> </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section style="width: 100%; height: 320vh;">
+    <div style="margin-left: 20px">
+      <div style="padding-top: 100px; padding-bottom: 45px">
+        <h3 style="color: rgb(7, 3, 40);">3 Open TCP Ports</h3>
+        <p style="margin-right: 230px">
+          The NMAP TCP port scan discovers open TCP ports with a complete scan of ports 0 to 65535.
+        </p>
+      </div>
+      <div>
+        <h2 style="color: rgb(7, 3, 40);">3.1 Total Risks</h2>
+        <p>
+          Total number of risks found by severity.
+        </p>
+        <div style="    padding-top: 60PX;">
+          <p><span style="margin-right: 100PX;color: rgb(218, 15, 204);">High</span>
+            <span style="margin-right: 100PX;color: rgb(255, 247, 0);">Medium</span>
+            <span style="margin-right: 100PX;color: rgb(79, 62, 230);">Low</span>
+            <span style="margin-right: 100PX;color: rgb(0, 255, 47);">Accepted</span>
+          </p>
+          <p><span style="margin-right: 100PX;">data</span>
+            <span style="    margin-right: 91PX;
+          margin-left: 11px;">data</span>
+            <span style="margin-right: 69PX;
+          margin-left: 31PX;">data</span>
+            <span style="margin-left: 50PX;">data</span>
+          </p>
+
+        </div>
+        <div style="    padding-top: 60PX;">
+          <h2 style="color: rgb(7, 3, 40);">3.2 Risks Breakdown</h2>
+          <p>Summary list of all detected risks.</p>
+
+          <p style="margin-right: 100PX;  color: rgb(7, 3, 40);">Open TCP Ports(Title):</p>
+          <p style="color: rgb(4, 203, 247)">Open TCP Port: <span style="color: rgb(4, 203, 247)"> 22 data</span> </p>
+          <p style="color: rgb(4, 203, 247)">Open TCP Port: <span style="color: rgb(4, 203, 247)"> 443 data</span> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="width: 100%; height: 320vh;">
+    <div style="margin-left: 20px">
+      <div style="padding-top: 100px; padding-bottom: 45px">
+        <h2 style="color: rgb(7, 3, 40);">3.3 Full Risk Details</h2>
+        <p>
+          Detailed information about each risk found by the scan.
+        </p>
+        <p><span style="color: rgb(7, 3, 40);">Open TCP Port: 22 ::</span><span>meduim</span></p>
+        <p style="font-size: 20px; color: rgb(7, 3, 40);">Description</p>
+        <p style="margin-right: 230px">An open port may be an expected configuration. For example, web servers use port
+          80 to serve websites over http and port 443 to
+          serve websites over https. For a list of commonly used ports see
+          https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers.
+          An unexpected open port could give unintended access to applications, data, and private networks. Open ports
+          can also be dangerous
+          when expected services are out of date and exploited through security vulnerabilities.</p>
+      </div>
+      <div>
+        <p>Vulnerable Target</p>
+        <p style="color: rgb(4, 203, 247)">nom de site </p>
+
+      </div>
+  </section>
+  <section style="width: 100%; height: 320vh;">
+    <div style="margin-left: 20px">
+      <div style="padding-top: 100px; padding-bottom: 45px">
+        <p style="padding-top: 100px; padding-bottom: 45px"><span style="color: rgb(7, 3, 40);">Open TCP Port:
+            443</span><span>low</span></p>
+        <p style="font-size: 20px; color: rgb(7, 3, 40);">Description</p>
+        <p style="margin-right: 230px">An open port may be an expected configuration. For example, web servers use port
+          80 to serve websites over http and port 443 to
+          serve websites over https. For a list of commonly used ports see
+          https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers. <br>
+          An unexpected open port could give unintended access to applications, data, and private networks. Open ports
+          can also be dangerous
+          when expected services are out of date and exploited through security vulnerabilities.</p>
+      </div>
+      <div>
+        <p>Vulnerable Target</p>
+        <p style="color: rgb(4, 203, 247)">nom de site </p>
+
+      </div>
+  </section>
+  <section style="width: 100%; height: 320vh;">
+    <div style="margin-left: 20px">
+      <div style="padding-top: 100px; padding-bottom: 5PX">
+        <h3 style="color: rgb(7, 3, 40);">4 Glossary</h3>
+        <p style="font-weight: bold;color: rgb(7, 3, 40);">Accepted Risk</p>
+        <p style="margin-right: 230px;padding-bottom: 5PX;">
+          An accepted risk is one which has been manually
+          reviewed and classified as acceptable to not fix at this
+          time, such as a false positive or an intentional part of the
+          system's architecture.
+        </p>
+        <p style="font-weight: bold;color: rgb(7, 3, 40);">Fully Qualified Domain Name (FQDN)</p>
+        <p style="margin-right: 230px;padding-bottom: 5PX;">
+          A fully qualified domain name is a complete domain name
+          for a specific website or service on the internet. This
+          includes not only the website or service name, but also the
+          top-level domain name, such as .com, .org, .net, etc. For
+          example, 'www.example.com' is an FQDN.
+        </p>
+        <p style="font-weight: bold;color: rgb(7, 3, 40);">Open TCP Ports</p>
+        <p style="margin-right: 230px;padding-bottom: 5PX;">
+          The NMAP TCP port scan discovers open TCP ports with a
+          complete scan of ports 0 to 65535.
+        </p>
+        <p style="font-weight: bold;color: rgb(7, 3, 40);"> Risk</p>
+        <p style="margin-right: 230px;padding-bottom: 5PX;">
+          A risk is a finding from a vulnerability scan. Each risk is a
+          potential security issue that needs review. Risks are
+          assigned a threat level which represents the potential
+          severity.
+        </p>
+        <p style="font-weight: bold;color: rgb(7, 3, 40);"> Target</p>
+        <p style="margin-right: 230px;padding-bottom: 5PX;">
+          A target represents target is a single URL, IP address, or
+          fully qualified domain name (FQDN) that was scanned.
+        </p>
+        <p style="font-weight: bold;color: rgb(7, 3, 40);">Threat Level</p>
+        <p style="margin-right: 230px;padding-bottom: 5PX;">
+          The threat level represents the estimated potential severity
+          of a particular risk. Threat level is divided into 4
+          categories: High, Medium, Low and Accepted.
+        </p>
+        <p style="font-weight: bold;color: rgb(7, 3, 40);">Threat Level</p>
+        <p style="margin-right: 230px;padding-bottom: 5PX;">
+          The threat level represents the estimated potential severity
+          of a particular risk. Threat level is divided into 5
+          categories: Critical, High, Medium, Low and Accepted.
+        </p>
+        <p style=" font-weight: bold;color: rgb(7, 3, 40);">CVSS Score</p>
+        <p style=" margin-right: 230px;padding-bottom: 5PX;">
+          The CVSS 3.0 score is a global standard for evaluating
+          vulnerabilities with a 0 to 10 scale. CVSS maps to threat
+          levels: 0.1 - 4.9 = Low, 5 - 8.5 = Medium, 8.6 - 10 =
+          High
+        </p>
+
+      </div>
+
+
+    </div>
+  </section>
 </body>
+
 </html>

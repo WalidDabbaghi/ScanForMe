@@ -11,10 +11,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "child_process": "^1.0.2",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "pdf-creator-node": "^1.4.1"
+    "fs": "^0.0.1-security",
+    "html-pdf": "^3.0.1",
+    "html-pdf-node": "^1.0.8",
+    "http": "^0.0.1-security",
+    "jsdom": "^24.0.0",
+    "path": "^0.12.7",
+    "pdf-creator-node": "^1.4.1",
+    "pdfkit": "^0.15.0",
+    "puppeteer": "^22.8.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
