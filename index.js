@@ -19,6 +19,7 @@ app.use('/DocsHtml', express.static(path.join(__dirname, 'DocsHtml')));
 
 app.set('layout', 'layout');
 app.set('layout_result', 'layout_result');
+app.set('layout_resultnikto', 'layout_resultnikto');
 app.use(homeRoutes.routes);
 
 app.listen(5000, () => console.log('App is listening on url http://localhost:5000'));

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikto - Cyber Security</title>
+  <title>Home - Cyber Security</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -18,6 +18,7 @@
       background-color: #fff;
       padding: 30px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
     }
     .form-header {
       margin-bottom: 20px;
@@ -25,19 +26,19 @@
   </style>
 </head>
 <body>
-  <%- include('header_home') %>
+  
 
   <div class="container">
     <div class="form-container">
       <div class="form-header text-center">
-        <h3>Nikto Scan</h3>
+        <h3>Scan URL with Nikto</h3>
       </div>
       <form class="form-inline justify-content-center" action="/niktoScan" method="POST">
-        <div class="form-group mx-sm-3 mb-2">
+        <div class=" form-group mx-sm-3 mb-2">
           <label for="urlInput" class="sr-only">Enter a URL, IP address or hostname</label>
-          <input type="text" class="form-control" id="urlInput" name="url" placeholder="Enter a URL, IP address or hostname" required>
+          <input type="text" class="form-control width=30vw" id="urlInput" name="url" placeholder="Enter a URL, IP address " required>
         </div>
-        <button type="submit" class="btn btn-success mb-2">Scan with Nikto</button>
+        <button type="submit" class="btn btn-success mb-2">Scan Nikto</button>
       </form>
     </div>
   </div>
