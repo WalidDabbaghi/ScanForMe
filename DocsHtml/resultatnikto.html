@@ -46,6 +46,1456 @@
 </head>
 <body>
 <div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>www.google.com / 142.250.180.164 port 443</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>142.250.180.164</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>www.google.com</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>443</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td>gws</td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="https://www.google.com:443/">https://www.google.com:443/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="https://142.250.180.164:443/">https://142.250.180.164:443/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The site uses TLS and the Strict-Transport-Security HTTP header is not defined.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/">https://www.google.com:443/</a><br>
+      <a href="https://142.250.180.164:443/">https://142.250.180.164:443/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: An alt-svc header was found which is advertising HTTP/3. The endpoint is: ':443'. Nikto cannot test HTTP/3 over QUIC.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/">https://www.google.com:443/</a><br>
+      <a href="https://142.250.180.164:443/">https://142.250.180.164:443/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/">https://www.google.com:443/</a><br>
+      <a href="https://142.250.180.164:443/">https://142.250.180.164:443/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/'>https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Cookie 1P_JAR created without the httponly flag.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/">https://www.google.com:443/</a><br>
+      <a href="https://142.250.180.164:443/">https://142.250.180.164:443/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>: Server banner changed from 'gws' to 'sffe'.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/">https://www.google.com:443/</a><br>
+      <a href="https://142.250.180.164:443/">https://142.250.180.164:443/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/crossdomain.xml</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/crossdomain.xml: Uncommon header 'cross-origin-opener-policy-report-only' found, with contents: same-origin; report-to=&quot;static-on-bigtable&quot;.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/crossdomain.xml">https://www.google.com:443/crossdomain.xml</a><br>
+      <a href="https://142.250.180.164:443/crossdomain.xml">https://142.250.180.164:443/crossdomain.xml</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/maps/api/streetview/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/maps/api/streetview/: Uncommon header 'server-timing' found, with contents: gfet4t7; dur=17.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/maps/api/streetview/">https://www.google.com:443/maps/api/streetview/</a><br>
+      <a href="https://142.250.180.164:443/maps/api/streetview/">https://142.250.180.164:443/maps/api/streetview/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/jobs/results/?page=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/about/careers/applications/jobs/results/?page=/: Uncommon header 'accept-ch' found, with contents: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/jobs/results/?page=/">https://www.google.com:443/about/careers/applications/jobs/results/?page=/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/jobs/results/?page=/">https://142.250.180.164:443/about/careers/applications/jobs/results/?page=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/jobs/results/?page=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/about/careers/applications/jobs/results/?page=/: Uncommon header 'reporting-endpoints' found, with contents: default=&quot;/about/careers/applications/_/HiringCportalFrontendUi/web-reports?context=eJwNxzFIAmEYBmD94BO5CiKiwqHCKaSL46yg1aWlKRqzI88yIe6_jgtqagrnGvpPkKKhqaEIa5K2mqKrqCEOIuJIDqJF3MR6h2d4lM94RknF5idSsXwuoPp2QNpvQGeXX3QBOychLdZDWoZiI6TabUiN7DfdQ8Vs0gGIwybtwt1oRD48QwARtKANfxAfi6gH-mAYRtoRZaBrSU4KyQoMwhCMQxomoXMtOXEj-fVF8gfkSh4vwcKexyuw__7IEo7zPhe6PrtwDpXWE1dhoDd5dPpzlej3Om8PlM4WxJZhCsdWN8pO2SqpuGrawnFXN9V1R1jumlU0dE2f1mb0uSlt1rC1fypTer0&quot;.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/jobs/results/?page=/">https://www.google.com:443/about/careers/applications/jobs/results/?page=/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/jobs/results/?page=/">https://142.250.180.164:443/about/careers/applications/jobs/results/?page=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/jobs/results/?page=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/jobs/results/?page=/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/jobs/results/?page=/">https://www.google.com:443/about/careers/applications/jobs/results/?page=/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/jobs/results/?page=/">https://142.250.180.164:443/about/careers/applications/jobs/results/?page=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/patents/pdf/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/patents/pdf/: Uncommon header 'x-frontend-version' found, with contents: patent-search.search_20240531_RC00.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/patents/pdf/">https://www.google.com:443/patents/pdf/</a><br>
+      <a href="https://142.250.180.164:443/patents/pdf/">https://142.250.180.164:443/patents/pdf/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/how-we-hire/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/how-we-hire/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/how-we-hire/">https://www.google.com:443/about/careers/applications/how-we-hire/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/how-we-hire/">https://142.250.180.164:443/about/careers/applications/how-we-hire/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/">https://www.google.com:443/about/careers/applications/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/">https://142.250.180.164:443/about/careers/applications/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/shopping/product/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/shopping/product/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/shopping/product/">https://www.google.com:443/shopping/product/</a><br>
+      <a href="https://142.250.180.164:443/shopping/product/">https://142.250.180.164:443/shopping/product/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?gws_rd=ssl$/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/?gws_rd=ssl$/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?gws_rd=ssl$/">https://www.google.com:443/?gws_rd=ssl$/</a><br>
+      <a href="https://142.250.180.164:443/?gws_rd=ssl$/">https://142.250.180.164:443/?gws_rd=ssl$/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/jobs/results/$/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/jobs/results/$/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/jobs/results/$/">https://www.google.com:443/about/careers/applications/jobs/results/$/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/jobs/results/$/">https://142.250.180.164:443/about/careers/applications/jobs/results/$/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/landing/signout.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/landing/signout.html' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/landing/signout.html">https://www.google.com:443/landing/signout.html</a><br>
+      <a href="https://142.250.180.164:443/landing/signout.html">https://142.250.180.164:443/landing/signout.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/benefits/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/benefits/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/benefits/">https://www.google.com:443/about/careers/applications/benefits/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/benefits/">https://142.250.180.164:443/about/careers/applications/benefits/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?hl=*&gws_rd=ssl$/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/?hl=*&gws_rd=ssl$/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?hl=*&gws_rd=ssl$/">https://www.google.com:443/?hl=*&gws_rd=ssl$/</a><br>
+      <a href="https://142.250.180.164:443/?hl=*&gws_rd=ssl$/">https://142.250.180.164:443/?hl=*&gws_rd=ssl$/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/pda?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/pda?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/pda?/">https://www.google.com:443/pda?/</a><br>
+      <a href="https://142.250.180.164:443/pda?/">https://142.250.180.164:443/pda?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/eeo/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/eeo/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/eeo/">https://www.google.com:443/about/careers/applications/eeo/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/eeo/">https://142.250.180.164:443/about/careers/applications/eeo/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?hl=*&*&gws_rd=ssl/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/?hl=*&*&gws_rd=ssl/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?hl=*&*&gws_rd=ssl/">https://www.google.com:443/?hl=*&*&gws_rd=ssl/</a><br>
+      <a href="https://142.250.180.164:443/?hl=*&*&gws_rd=ssl/">https://142.250.180.164:443/?hl=*&*&gws_rd=ssl/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/jobs/results?page=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/jobs/results?page=/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/jobs/results?page=/">https://www.google.com:443/about/careers/applications/jobs/results?page=/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/jobs/results?page=/">https://142.250.180.164:443/about/careers/applications/jobs/results?page=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/search/howsearchworks/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/search/howsearchworks/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/search/howsearchworks/">https://www.google.com:443/search/howsearchworks/</a><br>
+      <a href="https://142.250.180.164:443/search/howsearchworks/">https://142.250.180.164:443/search/howsearchworks/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?hl=*&/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/?hl=*&/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?hl=*&/">https://www.google.com:443/?hl=*&/</a><br>
+      <a href="https://142.250.180.164:443/?hl=*&/">https://142.250.180.164:443/?hl=*&/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/students/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/students/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/students/">https://www.google.com:443/about/careers/applications/students/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/students/">https://142.250.180.164:443/about/careers/applications/students/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/compressiontest/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/compressiontest/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/compressiontest/">https://www.google.com:443/compressiontest/</a><br>
+      <a href="https://142.250.180.164:443/compressiontest/">https://142.250.180.164:443/compressiontest/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/imode?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/imode?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/imode?/">https://www.google.com:443/imode?/</a><br>
+      <a href="https://142.250.180.164:443/imode?/">https://142.250.180.164:443/imode?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/xhtml?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/xhtml?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/xhtml?/">https://www.google.com:443/xhtml?/</a><br>
+      <a href="https://142.250.180.164:443/xhtml?/">https://142.250.180.164:443/xhtml?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/locations/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/locations/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/locations/">https://www.google.com:443/about/careers/applications/locations/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/locations/">https://142.250.180.164:443/about/careers/applications/locations/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/pda/search?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/pda/search?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/pda/search?/">https://www.google.com:443/pda/search?/</a><br>
+      <a href="https://142.250.180.164:443/pda/search?/">https://142.250.180.164:443/pda/search?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/maps/about/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/maps/about/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/maps/about/">https://www.google.com:443/maps/about/</a><br>
+      <a href="https://142.250.180.164:443/maps/about/">https://142.250.180.164:443/maps/about/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/landing/cmsnext-root/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/landing/cmsnext-root/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/landing/cmsnext-root/">https://www.google.com:443/landing/cmsnext-root/</a><br>
+      <a href="https://142.250.180.164:443/landing/cmsnext-root/">https://142.250.180.164:443/landing/cmsnext-root/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/interview-tips/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/interview-tips/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/interview-tips/">https://www.google.com:443/about/careers/applications/interview-tips/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/interview-tips/">https://142.250.180.164:443/about/careers/applications/interview-tips/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?pt1=true$/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/?pt1=true$/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?pt1=true$/">https://www.google.com:443/?pt1=true$/</a><br>
+      <a href="https://142.250.180.164:443/?pt1=true$/">https://142.250.180.164:443/?pt1=true$/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/search/about/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/search/about/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/search/about/">https://www.google.com:443/search/about/</a><br>
+      <a href="https://142.250.180.164:443/search/about/">https://142.250.180.164:443/search/about/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?/">https://www.google.com:443/?/</a><br>
+      <a href="https://142.250.180.164:443/?/">https://142.250.180.164:443/?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/hardware/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/hardware/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/hardware/">https://www.google.com:443/about/careers/applications/hardware/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/hardware/">https://142.250.180.164:443/about/careers/applications/hardware/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/wml?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/wml?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/wml?/">https://www.google.com:443/wml?/</a><br>
+      <a href="https://142.250.180.164:443/wml?/">https://142.250.180.164:443/wml?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/shopping?*/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/shopping?*/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/shopping?*/">https://www.google.com:443/shopping?*/</a><br>
+      <a href="https://142.250.180.164:443/shopping?*/">https://142.250.180.164:443/shopping?*/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?hl=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?hl=/: Drupal Link header found with value: &lt;/?hl=/&gt;;rel=&quot;canonical&quot;.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?hl=/">https://www.google.com:443/?hl=/</a><br>
+      <a href="https://142.250.180.164:443/?hl=/">https://142.250.180.164:443/?hl=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.drupal.org/'>https://www.drupal.org/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?hl=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/?hl=/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/?hl=/">https://www.google.com:443/?hl=/</a><br>
+      <a href="https://142.250.180.164:443/?hl=/">https://142.250.180.164:443/?hl=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/jobs/results?*&page=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/jobs/results?*&page=/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/jobs/results?*&page=/">https://www.google.com:443/about/careers/applications/jobs/results?*&page=/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/jobs/results?*&page=/">https://142.250.180.164:443/about/careers/applications/jobs/results?*&page=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/teams/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/teams/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/teams/">https://www.google.com:443/about/careers/applications/teams/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/teams/">https://142.250.180.164:443/about/careers/applications/teams/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/cloud/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/cloud/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/cloud/">https://www.google.com:443/about/careers/applications/cloud/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/cloud/">https://142.250.180.164:443/about/careers/applications/cloud/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/about/careers/applications/jobs/results/?*&page=/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/about/careers/applications/jobs/results/?*&page=/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/about/careers/applications/jobs/results/?*&page=/">https://www.google.com:443/about/careers/applications/jobs/results/?*&page=/</a><br>
+      <a href="https://142.250.180.164:443/about/careers/applications/jobs/results/?*&page=/">https://142.250.180.164:443/about/careers/applications/jobs/results/?*&page=/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/index.html?</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/index.html?' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/index.html?">https://www.google.com:443/index.html?</a><br>
+      <a href="https://142.250.180.164:443/index.html?">https://142.250.180.164:443/index.html?</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/xhtml/search?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/xhtml/search?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/xhtml/search?/">https://www.google.com:443/xhtml/search?/</a><br>
+      <a href="https://142.250.180.164:443/xhtml/search?/">https://142.250.180.164:443/xhtml/search?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/m?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/m?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/m?/">https://www.google.com:443/m?/</a><br>
+      <a href="https://142.250.180.164:443/m?/">https://142.250.180.164:443/m?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/wml/search?/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/wml/search?/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/wml/search?/">https://www.google.com:443/wml/search?/</a><br>
+      <a href="https://142.250.180.164:443/wml/search?/">https://142.250.180.164:443/wml/search?/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/robots.txt</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: contains 317 entries which should be manually viewed.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/robots.txt">https://www.google.com:443/robots.txt</a><br>
+      <a href="https://142.250.180.164:443/robots.txt">https://142.250.180.164:443/robots.txt</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt'>https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The Content-Encoding header is set to &quot;deflate&quot; which may mean that the server is vulnerable to the BREACH attack.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="https://www.google.com:443/">https://www.google.com:443/</a><br>
+      <a href="https://142.250.180.164:443/">https://142.250.180.164:443/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='http://breachattack.com/'>http://breachattack.com/</a></td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2024-06-01 08:18:04</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>1717244284 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>568 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.google.com -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:12:52 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Wed Dec 31 19:00:00 1969</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td> seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
 <p></p>
 <table class="headerTable">
  <tr>
@@ -85,7 +1535,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -93,11 +1543,11 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:11:28 2024</td>
+    <td>Sat Jun  1 08:22:19 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 10:11:44 2024</td>
+    <td>Sat Jun  1 08:22:35 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
@@ -199,7 +1649,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -207,11 +1657,695 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:12:55 2024</td>
+    <td>Sat Jun  1 08:25:12 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 10:13:10 2024</td>
+    <td>Sat Jun  1 08:25:28 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:27:40 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:27:56 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:31:40 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:31:56 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:37:31 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:37:47 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:38:08 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:38:24 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:38:47 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:39:03 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:40:23 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:40:38 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
@@ -313,7 +2447,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -321,11 +2455,11 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:36:16 2024</td>
+    <td>Sat Jun  1 08:41:36 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 10:36:32 2024</td>
+    <td>Sat Jun  1 08:41:52 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
@@ -427,7 +2561,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -435,11 +2569,11 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:37:03 2024</td>
+    <td>Sat Jun  1 08:45:28 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 10:37:19 2024</td>
+    <td>Sat Jun  1 08:45:44 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
@@ -541,7 +2675,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -549,11 +2683,239 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:37:52 2024</td>
+    <td>Sat Jun  1 08:46:14 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 10:38:07 2024</td>
+    <td>Sat Jun  1 08:46:30 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:47:43 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:47:59 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>16 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>1969-12-31 19:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>0 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>0 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Jun  1 08:50:13 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sat Jun  1 08:50:28 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
@@ -655,7 +3017,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -663,125 +3025,11 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:45:41 2024</td>
+    <td>Sat Jun  1 08:54:56 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 10:45:57 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:47:31 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 10:47:46 2024</td>
+    <td>Sat Jun  1 08:55:11 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
@@ -883,7 +3131,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -891,695 +3139,11 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 10:49:13 2024</td>
+    <td>Sat Jun  1 09:51:22 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 10:49:29 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:16:25 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:16:41 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:23:27 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:23:43 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:28:11 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:28:27 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:29:14 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:29:30 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:30:47 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:31:03 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:35:40 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:35:55 2024</td>
+    <td>Sat Jun  1 09:51:37 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
@@ -1681,7 +3245,7 @@
     <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
   <tr>
     <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
+    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 2</td>
   </tr>
   <tr>
     <td class="column-head">Hosts Tested</td>
@@ -1689,699 +3253,15 @@
   </tr>
   <tr>
     <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:38:17 2024</td>
+    <td>Sat Jun  1 10:00:39 2024</td>
   </tr>
   <tr>
     <td class="column-head">End Time</td>
-    <td>Sun May 26 11:38:33 2024</td>
+    <td>Sat Jun  1 10:00:55 2024</td>
   </tr>
   <tr>
     <td class="column-head">Elapsed Time</td>
     <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:39:28 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:39:44 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:42:22 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:42:38 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:54:52 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:55:07 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>15 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 11:58:25 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 11:58:41 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>16 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 12:02:07 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 12:02:22 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>15 seconds</td>
-  </tr>
-</table>
-<p></p>
-<p class="copyright">&copy; 2008 Chris Sullo</p>
-
-<!-- (c) 2008 Chris Sullo -->
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
- <title>Nikto Report</title>
- <style type="text/css">
-  .dataTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 11pt; 
-   font-weight: normal; 
-   color: #000066;
-   background: #EEEEEE;
-   border: thin solid black;
-   width: 95%;
-  }
-  .headerTable
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 15pt; 
-   font-weight: normal; 
-   color: white;
-   background: #000066;
-   border: thin solid black;
-   width: 300px;
-  }
-  .column-head
-  {
-   width: 15em;
-   font-weight:bold;
-   vertical-align: top;
-  }
-  .copyright
-  {
-   font-family: tahoma, sans-serif;
-   font-size: 10pt;
-   font-weight: normal;
-   font-style: italic;
-   color: black;
-  }
-  body
-  {
-   background: white;
-  }
- </style>
-</head>
-<body>
-<div>
-<p></p>
-<table class="headerTable">
- <tr>
-  <td>Host Summary</td>
- </tr>
-</table>
-<table  class="dataTable">
- <tr>
-  <td class="column-head">Start Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">End Time</td>
-  <td>1969-12-31 19:00:00</td>
- </tr>
- <tr>
-  <td class="column-head">Elapsed Time</td>
-  <td>0 seconds</td>
- </tr>
- <tr>
-  <td class="column-head">Statistics</td>
-  <td>0 requests,  errors,  findings</td>
- </tr>
-</table>
-</div>
-<p></p>
-
-<p></p>
-<table class="headerTable">
-  <tr>
-    <td>Scan Summary</td>
-  </tr>
-</table>
-<table class="dataTable">
-  <tr>
-    <td class="column-head">Software Details</td>
-    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
-  <tr>
-    <td class="column-head">CLI Options</td>
-    <td>-h https://www.khedma.site -Format htm -output ./DocsHtml/resultatnikto.html -Tuning 9</td>
-  </tr>
-  <tr>
-    <td class="column-head">Hosts Tested</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td class="column-head">Start Time</td>
-    <td>Sun May 26 12:06:57 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">End Time</td>
-    <td>Sun May 26 12:07:12 2024</td>
-  </tr>
-  <tr>
-    <td class="column-head">Elapsed Time</td>
-    <td>15 seconds</td>
   </tr>
 </table>
 <p></p>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Email</title>
+  <!-- Inclure jQuery pour faciliter l'utilisation d'AJAX -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .alert {
+      padding: 20px;
+      background-color: #f44336; /* Red */
+      color: white;
+      margin-bottom: 15px;
+    }
+    .alert.success {background-color: #4CAF50;} /* Green */
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .closebtn:hover {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Send Report via Email</h1>
+  <div id="alert-container"></div>
+  <form id="emailForm">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Send Email</button>
+  </form>
+
+  <script>
+    $(document).ready(function() {
+      $('#emailForm').on('submit', function(event) {
+        event.preventDefault(); // Empêcher le rechargement de la page
+
+        $.ajax({
+          url: '/send-emaill',
+          method: 'POST',
+          data: $(this).serialize(),
+          success: function(response) {
+            $('#alert-container').html('<div class="alert success"><span class="closebtn">&times;</span>Email sent successfully!</div>');
+          },
+          error: function(error) {
+            $('#alert-container').html('<div class="alert"><span class="closebtn">&times;</span>Error sending email.</div>');
+          }
+        });
+      });
+
+      // Fonction pour fermer l'alerte
+      $(document).on('click', '.closebtn', function() {
+        $(this).parent().remove();
+      });
+    });
+  </script>
+</body>
+</html>

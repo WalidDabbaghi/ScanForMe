@@ -4,7 +4,9 @@ const fs = require("fs");
 const puppeteer = require('puppeteer');
 const nodemailer = require('nodemailer');
 
-
+const homevieww = (req, res, next) => {
+  res.render("nikto", { title: "Home" });
+};
 const resultatnikto = (req, res, next) => {
   const url = req.body.url;
   console.log(`URL received: ${url}`);
@@ -22,22 +24,7 @@ const resultatnikto = (req, res, next) => {
     }
 
     console.log(`Script output: ${stdout}`);
-
-    // Vérifiez si le fichier resultatnikto.html existe
-    const resultPath = path.resolve(__dirname, "..", "DocsHtml", "resultatnikto.html");
-    console.log(`Result file path: ${resultPath}`);
-
-    // Attendre 1 minute avant de vérifier et envoyer le fichier
-    
-      fs.access(resultPath, fs.constants.F_OK, (err) => {
-        if (err) {
-          console.error(`File not found: ${resultPath}`);
-          res.status(500).send("Result file not found");
-        } else {
-          res.sendFile(resultPath);
-        }
-      });
-   
+    res.render("resultnikto", { title: "Scan Result" }); // Assuming you have a "result.ejs" or similar template
   });
 };
 
@@ -74,12 +61,12 @@ const generateniktoPdf = async (req, res) => {
 };
 
 
-const renderSendEmailForme = (req, res) => {
-  res.render("SendEmail", { title: "Send Email" });
+const renderSendEEmailForm = (req, res) => {
+  res.render("sendEmailnikto", { title: "Send Email" });
 };
 
 
-const SendEmail = async (req, res) => {
+const sendEmailnikto= async (req, res) => {
   const email = req.body.email;
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
@@ -107,7 +94,7 @@ const SendEmail = async (req, res) => {
   };
 
   try {
-    await transporter.SendEmail(mailOptions);
+    await transporter.sendMail(mailOptions);
     res.json({ success: true, message: 'Email sent successfully!' });
   } catch (error) {
     console.error('Error sending email:', error);
@@ -115,9 +102,10 @@ const SendEmail = async (req, res) => {
   }
 };
 module.exports = {
+  homevieww,
   resultatnikto,
   generateniktoPdf,
-  renderSendEmailForme,
-  SendEmail,
+  renderSendEEmailForm,
+  sendEmailnikto,
 
 };
