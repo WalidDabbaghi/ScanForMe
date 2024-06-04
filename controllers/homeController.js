@@ -63,22 +63,39 @@ const generatePdf = async (req, res) => {
   }
 };
 
- const  generateReport = async (req, res) => {
+const  generateReport = async (req, res) => {
   try {
     // Lire le fichier XML
     const xmlData = fs.readFileSync('./DocsXml/resultat.xml', 'utf8');
     const xmlDoc = await parseStringPromise(xmlData);
 
     // Extraire les données du fichier XML
-    const startstr = xmlDoc.nmaprun.$.startstr;
-    const addr = xmlDoc.nmaprun.host[0].address[0].$.addr;
-    const name = xmlDoc.nmaprun.host[0].hostnames[0].hostname[0].$.name;
-    const protocol = xmlDoc.nmaprun.host[0].ports[0].port[0].$.protocol;
-    const portid = xmlDoc.nmaprun.host[0].ports[0].port[0].$.portid;
-    const protocol1 = xmlDoc.nmaprun.host[0].ports[0].port[1].$.protocol;
-    const portid1 = xmlDoc.nmaprun.host[0].ports[0].port[1].$.portid;
-    const state = xmlDoc.nmaprun.host[0].ports[0].port[0].state[0].$.state;
-
+        // Vérification et extraction des données du fichier XML
+        const startstr = xmlDoc?.nmaprun?.$?.startstr || 'N/A';
+        const addr = xmlDoc?.nmaprun?.host?.[0]?.address?.[0]?.$.addr || 'N/A';
+        const name = xmlDoc?.nmaprun?.host?.[0]?.hostnames?.[0]?.hostname?.[0]?.$.name || 'N/A';
+    
+        const ports = xmlDoc?.nmaprun?.host?.[0]?.ports?.[0]?.port || [];
+        const numPorts = ports.length; // Calculer le nombre de ports
+         // Classifier les ports
+        let highCount = 0;
+        let mediumCount = 0;
+        let lowCount = 0;
+        let acceptedCount = 0;
+        let mediumPortsList = [];
+        let lowPortsList = [];
+        ports.forEach(port => {
+          const portid = port?.$.portid;
+          if (["21", "22", "23", "25", "139", "445", "1099", "1524", "587", "5432"].includes(portid)) {
+            mediumCount++;
+            mediumPortsList.push(portid);
+          } else if (["53", "80", "111", "443", "512", "513", "514", "2049", "2121", "3306", "5900", "6000", "6667", "8000", "8009", "8080", "8180"].includes(portid)) {
+            lowCount++;
+            lowPortsList.push(portid);
+          } else {
+            acceptedCount++;
+          }
+        });
     // Lire le modèle HTML
     const templateHtml = fs.readFileSync(path.resolve(__dirname, '../views/template.html'), 'utf8');
     
@@ -86,15 +103,41 @@ const generatePdf = async (req, res) => {
     const dom = new JSDOM(templateHtml);
     const document = dom.window.document;
 
+    // Sélectionner l'élément conteneur dans le HTML
+    const portsContainers = document.querySelectorAll('.portsContainer');
+
+    // Itérer sur tous les ports scannés
+    // const ports = xmlDoc.nmaprun.host[0].ports[0].port;
+    portsContainers.forEach(portsContainer => {
+      // Vider le conteneur des ports au cas où il contient déjà des éléments
+      portsContainer.innerHTML = '';
+
+      // Itérer sur tous les ports scannés
+      ports.forEach(port => {
+          const protocol = port?.$.protocol || 'N/A';
+          const portid = port?.$.portid || 'N/A';
+
+          // Créer une nouvelle balise <p>
+          const pElement = document.createElement('p');
+          pElement.style.color = 'rgb(4, 203, 247)';
+          pElement.textContent = `Open ${protocol} Port: ${portid}`;
+
+          // Ajouter la balise <p> au conteneur
+          portsContainer.appendChild(pElement);
+      });
+  });
+
+
     // Injecter les données dans le HTML
     document.querySelectorAll('.time').forEach(el => el.textContent = startstr);
-    document.querySelectorAll('.adresse').forEach(el => el.textContent = addr);
-    document.querySelectorAll('.nomHote').forEach(el => el.textContent = name);
-    document.querySelectorAll('.protocole').forEach(el => el.textContent = protocol);
-    document.querySelectorAll('.port').forEach(el => el.textContent = portid);
-    document.querySelectorAll('.protocole1').forEach(el => el.textContent = protocol1);
-    document.querySelectorAll('.port1').forEach(el => el.textContent = portid1);
-    document.querySelectorAll('.etatPort').forEach(el => el.textContent = state);
+    document.querySelectorAll('.adresse-nomHote').forEach(el => el.textContent = `Adresse: ${addr}, Nom d'hôte: ${name}`);
+    document.querySelectorAll('.numPorts').forEach(el => el.textContent = `Number of ports: ${numPorts}`);
+    document.querySelectorAll('.highPorts').forEach(el => el.textContent = `High: ${highCount}`);
+    document.querySelectorAll('.mediumPorts').forEach(el => el.textContent = `Medium: ${mediumCount}`);
+    document.querySelectorAll('.lowPorts').forEach(el => el.textContent = `Low: ${lowCount}`);
+    document.querySelectorAll('.acceptedPorts').forEach(el => el.textContent = `Accepted: ${acceptedCount}`);
+    document.querySelectorAll('.lesportmedium').forEach(el => el.textContent = `Medium Ports: ${mediumPortsList.join(', ')}`);
+    document.querySelectorAll('.lesportlow').forEach(el => el.textContent = `Low Ports: ${lowPortsList.join(', ')}`);
 
     // Convertir le HTML modifié en PDF avec Puppeteer
     const updatedHtml = dom.serialize();

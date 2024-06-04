@@ -283,7 +283,7 @@
   
 }
 </style>
-<title>Nmap Scan Report - Scanned at Sat Jun  1 10:04:07 2024</title>
+<title>Nmap Scan Report - Scanned at Tue Jun  4 10:11:02 2024</title>
 <script type="text/javascript">
      
       
@@ -329,43 +329,43 @@
 </head>
 <body>
 <a name="top"></a><div id="container">
-<h1>Nmap Scan Report - Scanned at Sat Jun  1 10:04:07 2024</h1>
+<h1>Nmap Scan Report - Scanned at Tue Jun  4 10:11:02 2024</h1>
 <ul id="menu">
 <li><a href="#scansummary">Scan Summary</a></li>
-<li> | <a href="#host_31_13_69_35" class="up">facebook.com
-                    (31.13.69.35)
-                  </a>
+<li> | <a href="#host_192_168_58_131" class="up">192.168.58.131</a>
 </li>
 </ul>
 <a name="scansummary"></a><hr class="print_only">
 <h2>Scan Summary</h2>
 <p>
-      Nmap 7.94SVN was initiated at Sat Jun  1 10:04:07 2024 with these arguments:<br><i>nmap -oX ./DocsXml/resultat.xml facebook.com</i><br></p>
+      Nmap 7.94SVN was initiated at Tue Jun  4 10:11:02 2024 with these arguments:<br><i>nmap -oX ./DocsXml/resultat.xml 192.168.58.131</i><br></p>
 <p>
     Verbosity: 0; Debug level 0</p>
-<p>Nmap done at Sat Jun  1 10:05:07 2024; 1 IP address (1 host up) scanned in 60.09 seconds</p>
+<p>Nmap done at Tue Jun  4 10:11:03 2024; 1 IP address (1 host up) scanned in 0.89 seconds</p>
 <hr class="print_only">
-<a name="host_31_13_69_35"></a><h2 class="up">31.13.69.35 / edge-star-mini-shv-01-pmo1.facebook.com / facebook.com<span class="print_only">(online)</span>
+<a name="host_192_168_58_131"></a><h2 class="up">192.168.58.131<span class="print_only">(online)</span>
 </h2>
-<div id="hostblock_31.13.69.35" class="unhidden">
+<div id="hostblock_192.168.58.131" class="unhidden">
 <h3>Address</h3>
-<ul><li>31.13.69.35
-            (ipv4)
-          </li></ul>
-
-<h3>Hostnames</h3>
 <ul>
-<li>facebook.com (user)</li>
-<li>edge-star-mini-shv-01-pmo1.facebook.com (PTR)</li>
+<li>192.168.58.131
+            (ipv4)
+          </li>
+<li>00:0C:29:D9:21:B8 - VMware 
+            (mac)
+          </li>
 </ul>
+
+
+
 <h3>Ports</h3>
-<p>The 998 ports scanned but not shown below are in state: <b>filtered</b></p>
-<ul><li><p>998 ports replied with: <b>no-response</b></p></li></ul>
-<table id="porttable_31.13.69.35" cellspacing="1">
+<p>The 977 ports scanned but not shown below are in state: <b>closed</b></p>
+<ul><li><p>977 ports replied with: <b>reset</b></p></li></ul>
+<table id="porttable_192.168.58.131" cellspacing="1">
 <tr class="head">
 <td colspan="2">Port</td>
 <td>State 
-          <a href="javascript:togglePorts('porttable_31.13.69.35','closed');"><span class="noprint"><small> (toggle closed [0] </small></span></a><a href="javascript:togglePorts('porttable_31.13.69.35','filtered');"><span class="noprint"><small> | filtered [0])</small></span></a>
+          <a href="javascript:togglePorts('porttable_192.168.58.131','closed');"><span class="noprint"><small> (toggle closed [0] </small></span></a><a href="javascript:togglePorts('porttable_192.168.58.131','filtered');"><span class="noprint"><small> | filtered [0])</small></span></a>
 </td>
 <td>Service</td>
 <td>Reason</td>
@@ -375,6 +375,56 @@
 </tr>
 
 
+<tr class="open">
+<td>21</td>
+<td>tcp</td>
+<td>open</td>
+<td>ftp </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>22</td>
+<td>tcp</td>
+<td>open</td>
+<td>ssh </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>23</td>
+<td>tcp</td>
+<td>open</td>
+<td>telnet </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>25</td>
+<td>tcp</td>
+<td>open</td>
+<td>smtp </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>53</td>
+<td>tcp</td>
+<td>open</td>
+<td>domain </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
 <tr class="open">
 <td>80</td>
 <td>tcp</td>
@@ -386,10 +436,170 @@
 <td> </td>
 </tr>
 <tr class="open">
-<td>443</td>
+<td>111</td>
 <td>tcp</td>
 <td>open</td>
-<td>https </td>
+<td>rpcbind </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>139</td>
+<td>tcp</td>
+<td>open</td>
+<td>netbios-ssn </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>445</td>
+<td>tcp</td>
+<td>open</td>
+<td>microsoft-ds </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>512</td>
+<td>tcp</td>
+<td>open</td>
+<td>exec </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>513</td>
+<td>tcp</td>
+<td>open</td>
+<td>login </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>514</td>
+<td>tcp</td>
+<td>open</td>
+<td>shell </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>1099</td>
+<td>tcp</td>
+<td>open</td>
+<td>rmiregistry </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>1524</td>
+<td>tcp</td>
+<td>open</td>
+<td>ingreslock </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>2049</td>
+<td>tcp</td>
+<td>open</td>
+<td>nfs </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>2121</td>
+<td>tcp</td>
+<td>open</td>
+<td>ccproxy-ftp </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>3306</td>
+<td>tcp</td>
+<td>open</td>
+<td>mysql </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>5432</td>
+<td>tcp</td>
+<td>open</td>
+<td>postgresql </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>5900</td>
+<td>tcp</td>
+<td>open</td>
+<td>vnc </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>6000</td>
+<td>tcp</td>
+<td>open</td>
+<td>X11 </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>6667</td>
+<td>tcp</td>
+<td>open</td>
+<td>irc </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>8009</td>
+<td>tcp</td>
+<td>open</td>
+<td>ajp13 </td>
+<td>syn-ack</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="open">
+<td>8180</td>
+<td>tcp</td>
+<td>open</td>
+<td> </td>
 <td>syn-ack</td>
 <td> </td>
 <td> </td>
@@ -397,15 +607,15 @@
 </tr>
 </table>
 
-<br><a href="javascript:toggle('metrics_31.13.69.35');">
-    Misc Metrics <span class="noprint"><small> (click to expand)</small></span></a><div id="metrics_31.13.69.35" class="hidden"><table cellspacing="1">
+<br><a href="javascript:toggle('metrics_192.168.58.131');">
+    Misc Metrics <span class="noprint"><small> (click to expand)</small></span></a><div id="metrics_192.168.58.131" class="hidden"><table cellspacing="1">
 <tr class="head">
 <td>Metric</td>
 <td>Value</td>
 </tr>
 <tr>
 <td>Ping Results</td>
-<td>reset</td>
+<td>arp-response</td>
 </tr>
 </table></div>
 </div>

@@ -24,7 +24,9 @@ const resultatnikto = (req, res, next) => {
     }
 
     console.log(`Script output: ${stdout}`);
-    res.render("resultnikto", { title: "Scan Result" }); // Assuming you have a "result.ejs" or similar template
+    setTimeout(() => {
+      res.render("resultnikto", { title: "Scan Result" });
+    }, 60000); // 60000 millisecondes = 60 secondes
   });
 };
 
